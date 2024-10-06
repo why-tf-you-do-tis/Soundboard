@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://192.168.1.20:8080/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="Main">
+    <div class="main">
+      <div class="buttons">
+          <div class="button_pair">
+              <div class="btn" style="border-top-left-radius: 5px;"><button class="button1" onclick="toggleAudio(0)">Audio 1</button></div>
+              <div class="btn"><button class="button2" onclick="toggleAudio(1)">Audio 2</button></div>
+              <div class="btn" style="border-top-right-radius: 5px;"><button class="button3" onclick="toggleAudio(2)">Audio 3</button></div>
+          </div>
+          <div class="button_pair">
+              <div class="btn"><button class="button1" onclick="toggleAudio(3)">Audio 4</button></div>
+              <div class="btn"><button class="button2" onclick="toggleAudio(4)">Audio 5</button></div>
+              <div class="btn"><button class="button3" onclick="toggleAudio(5)">Audio 6</button></div>
+          </div>
+          <div class="button_pair">
+              <div class="btn" style="border-bottom-left-radius: 5px;"><button class="button1" onclick="toggleAudio(6)">Audio 7</button></div>
+              <div class="btn"><button class="button2" onclick="toggleAudio(7)">Audio 8</button></div>
+              <div class="btn" style="border-bottom-right-radius: 5px;"><button class="button3" onclick="toggleAudio(8)">Audio 9</button></div>
+          </div>
+      </div>
+  </div>
+
+  <audio id="audio0" src="Audios/Audio1.mp3"></audio>
+  <audio id="audio1" src="Audios/Audio2.mp3"></audio>
+  <audio id="audio2" src="Audios/Audio3.mp3"></audio>
+  <audio id="audio3" src="Audios/Audio4.mp3"></audio>
+  <audio id="audio4" src="Audios/Audio5.mp3"></audio>
+  <audio id="audio5" src="Audios/Audio6.mp3"></audio>
+  <audio id="audio6" src="Audios/Audio7.mp3"></audio>
+  <audio id="audio7" src="Audios/Audio8.mp3"></audio>
+  <audio id="audio8" src="Audios/Audio9.mp3"></audio>
+	<div class="mixer">
+  <section class="channel" style="border-bottom-right-radius:9px;border-top-right-radius:9px;border-bottom-left-radius:9px;border-top-left-radius:9px;">
+    <p>Master</p>
+    <a class="active" onclick="Dim()"></a>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>   
+    </ul> 
+    <input class="slider" value="43" type="range">
+  </section>
+</div>
+
+		</div>
+
+<script src="app.js"></script>
